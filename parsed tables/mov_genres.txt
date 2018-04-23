@@ -1,0 +1,1 @@
+Genres(genre_id INT, genre_name VAR CHAR)
