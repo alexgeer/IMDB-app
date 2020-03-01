@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintStream;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -19,12 +19,11 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Scanner;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -35,7 +34,7 @@ import java.util.logging.Logger;
 public class MovieDatabase {
 
     //DB vars
-    private String dbName = "movies";
+    private final String dbName = "movies";
     // mySQL connection
     private Connection con;
     // connection params
@@ -47,11 +46,8 @@ public class MovieDatabase {
     ArrayList<Integer> genre_table = new ArrayList();
 
     /**
-     * @param args the command line arguments
      */
     public void execute(){
-
-        
         //setup conn
         try {
             System.out.println("Requesting connection to mySQL... ");
@@ -77,23 +73,6 @@ public class MovieDatabase {
         }
        System.out.println(" done");
 
-       /*//setupTables
-       try {
-       System.out.println("Creating database and tables...");
-       setupTables();
-       } catch (SQLException ex) {
-       System.out.println("Could not set up tables");
-       }
-       System.out.println("Tables succesfully created");
-       
-       System.out.println("Building similarity matrix... ");
-       try {
-       buildSimMatrix();
-       } catch (SQLException ex) {
-       System.out.println("failed");
-       System.exit(0);
-       }
-       System.out.println("done");*/
     }
 
     private void setupConnection() throws SQLException {

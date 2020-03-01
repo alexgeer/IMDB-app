@@ -1,0 +1,7 @@
+KEYWORDS( key_id INT, key_name VARCHAR, frequency INT)
+
+key_id is a unique id
+key_name is the corresponding keyword
+frequency is the number of occurences in the data
+
+note that the table is ordered from highest to lowest frequency

@@ -135,15 +135,11 @@ public class IMDBgui extends Application {
         HBox hb = new HBox();
         Button submit = new Button("Submit");
         //Setting an action for the Submit button
-        submit.setOnAction(new EventHandler<ActionEvent>() {
-
-            @Override
-            public void handle(ActionEvent e) {
-                if ((searchBar.getText() != null && !searchBar.getText().isEmpty())) {
-                    
-                } else {
-                    
-                }
+        submit.setOnAction((ActionEvent e) -> {
+            if ((searchBar.getText() != null && !searchBar.getText().isEmpty())) {
+                
+            } else {
+                
             }
         });
         hb.getChildren().addAll(label1, searchBar, submit);
