@@ -1,8 +1,7 @@
 The final project for Data Modeling in my Junior year of undergrad.
 
 Using a kaggle data dump of IMDB movie data, create a search and recommendation engine.
-The recommendation engine is implemented as a pivot table. I think we had to use Java, this would probably be
-much more sane in python. After using Javascript and Python for the last year I'm finding the verbosity of Java a little... disconcerting. Like a sci-fi author's imagination of what an advanced programming language would look like. I'm not knocking Java though (ok, I am a little bit)!
+The recommendation engine is implemented as a pivot table. We were required to use Java for the application and for importing the data into a MySQL db, though we were allowed to use any method or language to clean and prepare the data. It would be much more sane to implement mostly in python, and just use Java for the interface. After using Javascript and Python for the last year I'm finding the verbosity of Java here a little... disconcerting. Like a sci-fi author's imagination of what an advanced programming language would look like. I'm not knocking Java though (ok, I am a little bit)!
 
 A rather basic (and slow) implementation that nonetheless works. 
 I'm wincing looking at this code now. 
